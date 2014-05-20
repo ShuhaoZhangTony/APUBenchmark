@@ -81,7 +81,7 @@ void RunBenchmark(cl_device_id dev,
 //   Also detect and print outliers from parallel runs.
 //
 // ****************************************************************************
-int gpu_offset=0;
+int gpu_offset=50;
 int tony_device=0;
 int main(int argc, char *argv[])
 {

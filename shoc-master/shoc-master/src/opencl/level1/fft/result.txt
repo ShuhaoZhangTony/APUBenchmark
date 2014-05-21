@@ -1,0 +1,6 @@
+Chose device: name='Devastator' index=0 id=0x1831bc0
+Chose device: name='AMD A10-5800K APU with Radeon(tm) HD Graphics' index=1 id=0x1c4fc00
+
+Chose device: name='Devastator' index=0 id=0xc4fbc0
+Chose device: name='AMD A10-5800K APU with Radeon(tm) HD Graphics' index=1 id=0x1075eb0
+

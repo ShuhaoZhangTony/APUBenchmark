@@ -173,10 +173,12 @@ inline T2 cmplx_sub( T2 a, T2 b ) { return (T2)( a.x - b.x, a.y - b.y ); }
 
 ///////////////////////////////////////////
 
-__kernel void fft1D_512 (__global T2 *work, int groupOffset)
+//__kernel void fft1D_512 (__global T2 *work, int groupOffset)
+__kernel void fft1D_512 (__global T2 *work)
 {
   int tid = get_local_id(0);
-  int bid = get_group_id(0) +groupOffset;
+  //int bid = get_group_id(0) +groupOffset;
+  int bid = get_group_id(0);
   int blockIdx = bid * 512 + tid;
   int hi = tid>>3;
   int lo = tid&7;
@@ -205,11 +207,13 @@ __kernel void fft1D_512 (__global T2 *work, int groupOffset)
 
 
 
-__kernel void ifft1D_512 (__global T2 *work, int groupOffset)
+//__kernel void ifft1D_512 (__global T2 *work, int groupOffset)
+__kernel void ifft1D_512 (__global T2 *work)
 {
   int i;
   int tid = get_local_id(0);
-  int bid = get_group_id(0) +groupOffset;
+  //int bid = get_group_id(0) +groupOffset;
+  int bid = get_group_id(0);
   int blockIdx = bid * 512 + tid;
   int hi = tid>>3;
   int lo = tid&7;

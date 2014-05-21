@@ -157,12 +157,14 @@ RunBenchmark_ext(cl_device_id *dev,
     }
     else {
         // Always run single precision test
-        runTest_ext<cplxflt>("SP-FFT", dev, ctx, queue, resultDB, op);
+        //runTest_ext<cplxflt>("SP-FFT", dev, ctx, queue, resultDB, op);
+        runTest<cplxflt>("SP-FFT", dev[1], ctx, queue[1], resultDB, op);
 
         // If double precision is supported, run the DP test
         if (has_dp) {
             cout << "DP Supported\n";
-            runTest_ext<cplxdbl>("DP-FFT", dev, ctx, queue, resultDB, op);
+            //runTest_ext<cplxdbl>("DP-FFT", dev, ctx, queue, resultDB, op);
+            runTest<cplxdbl>("DP-FFT", dev[1], ctx, queue[1], resultDB, op);
         }
         else {
             cout << "DP Not Supported\n";
@@ -367,9 +369,10 @@ void runTest_ext(const string& name,
 
     // allocate host memory
     T2 *source, *result;
-    allocHostBuffer((void**)&source, used_bytes, ctx, queue[1]);
-    allocHostBuffer((void**)&result, used_bytes, ctx, queue[1]);
-
+    //allocHostBuffer((void**)&source, used_bytes, ctx, queue[1]);
+    //allocHostBuffer((void**)&result, used_bytes, ctx, queue[1]);
+    source=(T2*)malloc(used_bytes);
+    result=(T2*)malloc(used_bytes);
     // init host memory...
     for (i = 0; i < half_n_cmplx; i++) {
         source[i].x = (rand()/(float)RAND_MAX)*2-1;
@@ -379,28 +382,27 @@ void runTest_ext(const string& name,
     }
 
     // alloc device memory
-    allocDeviceBuffer(&work, used_bytes, ctx, queue[1]);
-    allocDeviceBuffer(&chk, sizeof(cl_int), ctx, queue[1]);
+    allocDeviceBuffer(&work, used_bytes, ctx, queue[0]);
+    allocDeviceBuffer(&chk, sizeof(cl_int), ctx, queue[0]);
 
     // copy to device, and record transfer time
     cl_int chk_init = 0;
-    copyToDevice(chk, &chk_init, sizeof(cl_int), queue[1]);
-    clFinish(queue[1]);
-
+    copyToDevice(chk, &chk_init, sizeof(cl_int), queue[0]);
+    clFinish(queue[0]);
     // (warm up)
-    copyToDevice(work, source, used_bytes, queue[1]);
-    clFinish(queue[1]);
+    copyToDevice(work, source, used_bytes, queue[0]);
+    clFinish(queue[0]);
 
     // (measure h->d)
     int pcie_TH = Timer::Start();
-    copyToDevice(work, source, used_bytes, queue[1]);
-    clFinish(queue[1]);
+    copyToDevice(work, source, used_bytes, queue[0]);
+    clFinish(queue[0]);
     double transfer_time = Timer::Stop(pcie_TH, "PCIe Transfer Time");
 
     // (measure d->h)
     pcie_TH = Timer::Start();
-    copyFromDevice(source, work, used_bytes, queue[1]);
-    clFinish(queue[1]);
+    copyFromDevice(source, work, used_bytes, queue[0]);
+    clFinish(queue[0]);
     transfer_time += Timer::Stop(pcie_TH, "PCIe Transfer Time");
 
     const char *sizeStr;
@@ -408,11 +410,13 @@ void runTest_ext(const string& name,
     ss << "N=" << (long)N;
     sizeStr = strdup(ss.str().c_str());
     
-    cl_event *fftEvent = (cl_event*)malloc(sizeof(cl_event)*2);
+    //cl_event *fftEvent = (cl_event*)malloc(sizeof(cl_event)*2);
+	Event fftEvent2("FFT");
     for (int k=0; k<passes; k++) {
 
         // time fft kernel
-        transform_ext(work, n_ffts, fftEvent, fftKrnl, queue);
+        //transform_ext(work, n_ffts, fftEvent, fftKrnl, queue);
+        transform(work, n_ffts, fftEvent2, fftKrnl, queue[0]);
      //   double nsec = (double)fftEvent.SubmitEndRuntime();
 	double nsec = getSubmitEndRuntime(); 
         double fftsz = 512;
@@ -424,7 +428,9 @@ void runTest_ext(const string& name,
         resultDB.AddResult(name+"_Parity", sizeStr, "N", transfer_time*1e9f / nsec);
 
         // time ifft kernel
-        transform_ext(work, n_ffts, fftEvent, ifftKrnl, queue);
+        //transform_ext(work, n_ffts, fftEvent, ifftKrnl, queue);
+        transform(work, n_ffts, fftEvent2, fftKrnl, queue[0]);
+     //   double nsec = (double)fftEvent.SubmitEndRuntime();
         //nsec = (double)fftEvent.SubmitEndRuntime();
 	nsec = getSubmitEndRuntime();
         Gflops = n_ffts*(5*fftsz*log2(fftsz))/nsec;
@@ -436,14 +442,16 @@ void runTest_ext(const string& name,
             transfer_time*1e9f / nsec);
         // check kernel
         int failed = check(work, chk, half_n_ffts, half_n_cmplx,
-            chkKrnl, queue[1]);
+            chkKrnl, queue[0]);
         cout << "Test " << ((failed) ? "Failed\n" : "Passed\n");
     }
 
-    freeDeviceBuffer(work, ctx, queue[1]);
-    freeDeviceBuffer(chk, ctx, queue[1]);
-    freeHostBuffer(source, ctx, queue[1]);
-    freeHostBuffer(result, ctx, queue[1]);
+    freeDeviceBuffer(work, ctx, queue[0]);
+    freeDeviceBuffer(chk, ctx, queue[0]);
+    //freeHostBuffer(source, ctx, queue[1]);
+    //freeHostBuffer(result, ctx, queue[1]);
+	free(source);
+	free(result);
     deinit_ext(queue, fftProg, fftKrnl, ifftKrnl, chkKrnl);
 }
 
@@ -544,6 +552,6 @@ template <class T2> void dump(OptionParser& op, cl_device_id id,
     }
 
     freeDeviceBuffer(work, ctx, queue);
-    freeHostBuffer(source, ctx, queue);
-    freeHostBuffer(result, ctx, queue);
+    free(source);
+    free(result);
 }

@@ -232,7 +232,7 @@ transform_ext(void* workp,
                                  &globalsz, &localsz, fftEvent);
     if(rt!=-1){
 	FillTimingInfo(fftEvent,rt);
-	Event_Print(cout,fftEvent,rt);
+//	Event_Print(cout,fftEvent,rt);
 	}
 }
 

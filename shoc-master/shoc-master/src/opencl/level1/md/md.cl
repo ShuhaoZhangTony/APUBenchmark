@@ -3,7 +3,7 @@
 #define FORCEVECTYPE float4
 #define FPTYPE float
 #elif K_DOUBLE_PRECISION
-#pragma OPENCL EXTENSION cl_khr_fp64: enable
+#pragma OPENCL EXTENSION cl_khr_fp64: disable
 #define POSVECTYPE double4
 #define FORCEVECTYPE double4
 #define FPTYPE double
@@ -21,7 +21,8 @@ __kernel void compute_lj_force(__global FORCEVECTYPE *force,
                                const FPTYPE cutsq,
                                const FPTYPE lj1,
                                const FPTYPE lj2,
-                               const int inum)
+                               const int inum,
+				int groupOffset)
 {
     uint idx = get_global_id(0);
 

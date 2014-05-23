@@ -198,8 +198,10 @@ void runTest(const string& name,
 
     // allocate host memory
     T2 *source, *result;
-    allocHostBuffer((void**)&source, used_bytes, ctx, queue);
-    allocHostBuffer((void**)&result, used_bytes, ctx, queue);
+// source=(T2*)malloc(used_bytes);
+// result=(T2*)malloc(used_bytes);
+   allocHostBuffer((void**)&source, used_bytes, ctx, queue);
+   allocHostBuffer((void**)&result, used_bytes, ctx, queue);
 
     // init host memory...
     for (i = 0; i < half_n_cmplx; i++) {
@@ -221,7 +223,6 @@ void runTest(const string& name,
     // (warm up)
     copyToDevice(work, source, used_bytes, queue);
     clFinish(queue);
-
     // (measure h->d)
     int pcie_TH = Timer::Start();
     copyToDevice(work, source, used_bytes, queue);

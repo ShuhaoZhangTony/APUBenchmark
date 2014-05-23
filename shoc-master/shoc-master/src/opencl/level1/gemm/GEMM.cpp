@@ -144,8 +144,8 @@ RunBenchmark_ext(cl_device_id* dev,
 {
     // Always run single precision test
     // OpenCL doesn't support templated kernels, so we have to use macros
-    runTest_ext<float>("SGEMM", dev, ctx, queue, resultDB, op,
-            "-DSINGLE_PRECISION");
+//    runTest_ext<float>("SGEMM", dev, ctx, queue, resultDB, op,
+//            "-DSINGLE_PRECISION");
 
     // If double precision is supported, run the DP test
     if (checkExtension(dev[0], "cl_khr_fp64") && checkExtension(dev[1], "cl_khr_fp64") )
@@ -690,7 +690,7 @@ void runTest_ext(const string& testName, cl_device_id * dev, cl_context ctx,
     const size_t globalWorkSize[2] = {m/4,n/4};
 
     int passes = op.getOptionInt("passes");
-
+	double result=0.0;
     // Run NN
     for (int i = 0; i < passes; i++) {
         Event evDownload1("Download A");
@@ -715,7 +715,7 @@ void runTest_ext(const string& testName, cl_device_id * dev, cl_context ctx,
                                      localWorkSize, evNN);
 	if(rt!=-1){
 		FillTimingInfo(evNN,rt);
-		Event_Print(cout,evNN,rt);
+		//Event_Print(cout,evNN,rt);
 	}
 	
         err = clEnqueueReadBuffer(queue[1], Cgpu, CL_TRUE, 0, m*n*sizeof(T),
@@ -730,7 +730,15 @@ void runTest_ext(const string& testName, cl_device_id * dev, cl_context ctx,
         double gemm_pure_time = 0.0;
 
         //gemm_pure_time = evNN.SubmitEndRuntime();
-        gemm_pure_time = std::max(SubmitEndRuntime(0),SubmitEndRuntime(1));
+	if(gpu_offset==0){
+		gemm_pure_time = SubmitEndRuntime(0);
+	}else if(gpu_offset==100){
+		gemm_pure_time = SubmitEndRuntime(1);
+	}else{
+        	gemm_pure_time = std::max(SubmitEndRuntime(0),SubmitEndRuntime(1));
+	}
+	//printf("1,gemm_pure:%lf\n",gemm_pure_time);
+	result+=gemm_pure_time;
 
         user_wait_time = evUpload.EndTime() - evDownload1.QueuedTime();
         double transfer_time = user_wait_time - gemm_pure_time;
@@ -764,7 +772,7 @@ void runTest_ext(const string& testName, cl_device_id * dev, cl_context ctx,
                                      localWorkSize, evNT);
 	 if(rt!=-1){
         	FillTimingInfo(evNT,rt);
-     	 	Event_Print(cout,evNT,rt);
+     	 	//Event_Print(cout,evNT,rt);
 	 }
 
         err = clEnqueueReadBuffer(queue[1], Cgpu, CL_TRUE, 0, m*n*sizeof(T),
@@ -779,8 +787,15 @@ void runTest_ext(const string& testName, cl_device_id * dev, cl_context ctx,
         double gemm_pure_time = 0.0;
 
         //gemm_pure_time = evNT.SubmitEndRuntime();
-        gemm_pure_time = std::max(SubmitEndRuntime(0),SubmitEndRuntime(1));
-
+	if(gpu_offset==0){
+		gemm_pure_time = SubmitEndRuntime(0);
+	}else if(gpu_offset==100){
+		gemm_pure_time = SubmitEndRuntime(1);
+	}else{
+        	gemm_pure_time = std::max(SubmitEndRuntime(0),SubmitEndRuntime(1));
+	}
+	//printf("2,gemm_pure:%lf\n",gemm_pure_time);
+	result+=gemm_pure_time;
         user_wait_time = evUpload.EndTime() - evDownload1.QueuedTime();
         double transfer_time = user_wait_time - gemm_pure_time;
         double flops = 2.0*(double)N*N*N;
@@ -791,7 +806,7 @@ void runTest_ext(const string& testName, cl_device_id * dev, cl_context ctx,
         resultDB.AddResult(testName+"-T_Parity", toString(N), "N",
                 transfer_time / gemm_pure_time);
     }
-
+	printf("CAUTION: gpu_offset:%d\t totalKernel:%lf ms\n\n",gpu_offset,result * 1E-6);
     if (true) // pinned
     {
         err = clReleaseMemObject(Aobj);

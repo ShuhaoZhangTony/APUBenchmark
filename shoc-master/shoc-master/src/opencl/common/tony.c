@@ -206,22 +206,22 @@ cl_int clEnqueueNDRangeKernel_tony(cl_command_queue * cmdqueue,
 		GPU_RUN=0;
 	 }
          //const size_t *const_remain = remain_global_work_size;
-         printf("global_workSize[0] %d , local_work_size[1] %d, gpu_global_work_size is %d\n",global_work_size[0],local_work_size[0],gpu_global_work_size[0]);
+       //  printf("global_workSize[0] %d , local_work_size[1] %d, gpu_global_work_size is %d\n",global_work_size[0],local_work_size[0],gpu_global_work_size[0]);
 
          int numOfArgs;
          clGetKernelInfo(kernel,CL_KERNEL_NUM_ARGS,sizeof(int),&numOfArgs,NULL);
          //printf("Num of args is %d\n", numOfArgs);
          int groupOffset =0;
          if(GPU_RUN){		 
-			 printf("Launch into gpu,gpu_global_work_size is %d\n",gpu_global_work_size[1]);	  
+			 //printf("Launch into gpu,gpu_global_work_size is %d\n",gpu_global_work_size[0]);	  
 			 clSetKernelArg(kernel, numOfArgs-1, sizeof(int),(void*)&groupOffset);
 			 error=clEnqueueNDRangeKernel(cmdqueue[1],kernel,work_dim,NULL,gpu_global_work_size,local_work_size,0,NULL,&(eventList[1]));
 			if (error != CL_SUCCESS)
                 fatal_CL(error, __FILE__,__LINE__);
          }
          if(CPU_RUN){
-			 groupOffset =gpu_global_work_size[1] / (local_work_size[1]);
-			 printf("Launch into cpu,global_work_size is %d\n",remain_global_work_size);	
+			 groupOffset =gpu_global_work_size[0] / (local_work_size[0]);
+			// printf("Launch into cpu,global_work_size is %d\n",remain_global_work_size[0]);	
 			 clSetKernelArg(kernel, numOfArgs-1, sizeof(int),(void*)&groupOffset);
 			 error =clEnqueueNDRangeKernel(cmdqueue[0],kernel,work_dim,gpu_global_work_size,remain_global_work_size,local_work_size,0,NULL,&(eventList[0]));
 			if (error != CL_SUCCESS)

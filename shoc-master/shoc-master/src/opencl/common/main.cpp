@@ -81,7 +81,7 @@ void RunBenchmark(cl_device_id dev,
 //   Also detect and print outliers from parallel runs.
 //
 // ****************************************************************************
-int gpu_offset=50;
+int gpu_offset=0;
 int tony_device=0;
 int main(int argc, char *argv[])
 {
@@ -176,7 +176,8 @@ int main(int argc, char *argv[])
         // The device option supports specifying more than one device
         // for now, just choose the first one.
         int platform = op.getOptionInt("platform");
-
+	gpu_offset= op.getOptionInt("gpu_offset");
+	tony_device=op.getOptionInt("tony_device");
 #ifdef PARALLEL
         NodeInfo ni;
         int myNodeRank = ni.nodeRank();
@@ -240,7 +241,7 @@ int main(int argc, char *argv[])
         ResultDatabase resultDB;
 
         // Run the benchmark
-//        RunBenchmark(id, ctx, queue, resultDB, op);
+//	RunBenchmark(DevId[1], ctx, queue[1], resultDB, op);
         RunBenchmark_ext(DevId, ctx, queue, resultDB, op);
 
 #ifndef PARALLEL

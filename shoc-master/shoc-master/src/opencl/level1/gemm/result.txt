@@ -1,0 +1,941 @@
+Chose device: name='AMD A10-5800K APU with Radeon(tm) HD Graphics' index=0 id=0x6fcf30
+Chose device: name='Devastator' index=0 id=0x1211f60
+Chose device: name='AMD A10-5800K APU with Radeon(tm) HD Graphics' index=1 id=0x1638fa0
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x1720a20: 0 <--
+  raw queuedTime ns = 614187405447293
+  raw submitTime ns = 614187405458213
+  raw startTime ns  = 614187406757631
+  raw endTime ns    = 614187757545311
+  queued-submit delay  = 0.01092 ms
+  submit-start delay   = 1.29942 ms
+  start-end runtime    = 350.788 ms
+  queue-end total time = 352.098 ms
+
+--> Event id=0x1bc2230: 1 <--
+  raw queuedTime ns = 614187397253192
+  raw submitTime ns = 614187397268313
+  raw startTime ns  = 614187397282900
+  raw endTime ns    = 614187856011693
+  queued-submit delay  = 0.015121 ms
+  submit-start delay   = 0.014587 ms
+  start-end runtime    = 458.729 ms
+  queue-end total time = 458.759 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x19d2e70: 0 <--
+  raw queuedTime ns = 614187869846987
+  raw submitTime ns = 614187869861466
+  raw startTime ns  = 614187870802275
+  raw endTime ns    = 614188221006655
+  queued-submit delay  = 0.014479 ms
+  submit-start delay   = 0.940809 ms
+  start-end runtime    = 350.204 ms
+  queue-end total time = 351.16 ms
+
+--> Event id=0x16cc760: 1 <--
+  raw queuedTime ns = 614187869839093
+  raw submitTime ns = 614187869848290
+  raw startTime ns  = 614187869858680
+  raw endTime ns    = 614188400192444
+  queued-submit delay  = 0.009197 ms
+  submit-start delay   = 0.01039 ms
+  start-end runtime    = 530.334 ms
+  queue-end total time = 530.353 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x1b68950: 0 <--
+  raw queuedTime ns = 614188413964488
+  raw submitTime ns = 614188413976825
+  raw startTime ns  = 614188414944018
+  raw endTime ns    = 614188763237618
+  queued-submit delay  = 0.012337 ms
+  submit-start delay   = 0.967193 ms
+  start-end runtime    = 348.294 ms
+  queue-end total time = 349.273 ms
+
+--> Event id=0x1ba6510: 1 <--
+  raw queuedTime ns = 614188413956647
+  raw submitTime ns = 614188413964495
+  raw startTime ns  = 614188413979294
+  raw endTime ns    = 614188937159583
+  queued-submit delay  = 0.007848 ms
+  submit-start delay   = 0.014799 ms
+  start-end runtime    = 523.18 ms
+  queue-end total time = 523.203 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x165e9b0: 0 <--
+  raw queuedTime ns = 614188951028941
+  raw submitTime ns = 614188951043286
+  raw startTime ns  = 614188952112899
+  raw endTime ns    = 614189299047619
+  queued-submit delay  = 0.014345 ms
+  submit-start delay   = 1.06961 ms
+  start-end runtime    = 346.935 ms
+  queue-end total time = 348.019 ms
+
+--> Event id=0x1731020: 1 <--
+  raw queuedTime ns = 614188951021689
+  raw submitTime ns = 614188951029460
+  raw startTime ns  = 614188951036734
+  raw endTime ns    = 614189474964891
+  queued-submit delay  = 0.007771 ms
+  submit-start delay   = 0.007274 ms
+  start-end runtime    = 523.928 ms
+  queue-end total time = 523.943 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x17abdb0: 0 <--
+  raw queuedTime ns = 614189488871468
+  raw submitTime ns = 614189488880001
+  raw startTime ns  = 614189489795545
+  raw endTime ns    = 614189835750485
+  queued-submit delay  = 0.008533 ms
+  submit-start delay   = 0.915544 ms
+  start-end runtime    = 345.955 ms
+  queue-end total time = 346.879 ms
+
+--> Event id=0x17abb90: 1 <--
+  raw queuedTime ns = 614189488863825
+  raw submitTime ns = 614189488872109
+  raw startTime ns  = 614189488886487
+  raw endTime ns    = 614190019174585
+  queued-submit delay  = 0.008284 ms
+  submit-start delay   = 0.014378 ms
+  start-end runtime    = 530.288 ms
+  queue-end total time = 530.311 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x16bab70: 0 <--
+  raw queuedTime ns = 614190033053218
+  raw submitTime ns = 614190033066759
+  raw startTime ns  = 614190033980457
+  raw endTime ns    = 614190377340577
+  queued-submit delay  = 0.013541 ms
+  submit-start delay   = 0.913698 ms
+  start-end runtime    = 343.36 ms
+  queue-end total time = 344.287 ms
+
+--> Event id=0x16ba9c0: 1 <--
+  raw queuedTime ns = 614190033045934
+  raw submitTime ns = 614190033054503
+  raw startTime ns  = 614190033064013
+  raw endTime ns    = 614190564550897
+  queued-submit delay  = 0.008569 ms
+  submit-start delay   = 0.00951 ms
+  start-end runtime    = 531.487 ms
+  queue-end total time = 531.505 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x16f6f80: 0 <--
+  raw queuedTime ns = 614190578374088
+  raw submitTime ns = 614190578382306
+  raw startTime ns  = 614190579281046
+  raw endTime ns    = 614190920128126
+  queued-submit delay  = 0.008218 ms
+  submit-start delay   = 0.89874 ms
+  start-end runtime    = 340.847 ms
+  queue-end total time = 341.754 ms
+
+--> Event id=0x16f6d60: 1 <--
+  raw queuedTime ns = 614190578366052
+  raw submitTime ns = 614190578374460
+  raw startTime ns  = 614190578502055
+  raw endTime ns    = 614191102808765
+  queued-submit delay  = 0.008408 ms
+  submit-start delay   = 0.127595 ms
+  start-end runtime    = 524.307 ms
+  queue-end total time = 524.443 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x16de370: 0 <--
+  raw queuedTime ns = 614191117179927
+  raw submitTime ns = 614191117191084
+  raw startTime ns  = 614191118105873
+  raw endTime ns    = 614191454952973
+  queued-submit delay  = 0.011157 ms
+  submit-start delay   = 0.914789 ms
+  start-end runtime    = 336.847 ms
+  queue-end total time = 337.773 ms
+
+--> Event id=0x16de150: 1 <--
+  raw queuedTime ns = 614191117172553
+  raw submitTime ns = 614191117180197
+  raw startTime ns  = 614191117188254
+  raw endTime ns    = 614191643340831
+  queued-submit delay  = 0.007644 ms
+  submit-start delay   = 0.008057 ms
+  start-end runtime    = 526.153 ms
+  queue-end total time = 526.168 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x1bc4dd0: 0 <--
+  raw queuedTime ns = 614191657192971
+  raw submitTime ns = 614191657201045
+  raw startTime ns  = 614191658114671
+  raw endTime ns    = 614192005798351
+  queued-submit delay  = 0.008074 ms
+  submit-start delay   = 0.913626 ms
+  start-end runtime    = 347.684 ms
+  queue-end total time = 348.605 ms
+
+--> Event id=0x1bc4bb0: 1 <--
+  raw queuedTime ns = 614191657185426
+  raw submitTime ns = 614191657193953
+  raw startTime ns  = 614191657321302
+  raw endTime ns    = 614192186951985
+  queued-submit delay  = 0.008527 ms
+  submit-start delay   = 0.127349 ms
+  start-end runtime    = 529.631 ms
+  queue-end total time = 529.767 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x16deb40: 0 <--
+  raw queuedTime ns = 614192200885186
+  raw submitTime ns = 614192200896795
+  raw startTime ns  = 614192201811930
+  raw endTime ns    = 614192548434510
+  queued-submit delay  = 0.011609 ms
+  submit-start delay   = 0.915135 ms
+  start-end runtime    = 346.623 ms
+  queue-end total time = 347.549 ms
+
+--> Event id=0x16eb8d0: 1 <--
+  raw queuedTime ns = 614192200877597
+  raw submitTime ns = 614192200885423
+  raw startTime ns  = 614192200893830
+  raw endTime ns    = 614192731853047
+  queued-submit delay  = 0.007826 ms
+  submit-start delay   = 0.008407 ms
+  start-end runtime    = 530.959 ms
+  queue-end total time = 530.975 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x1bc08d0: 0 <--
+  raw queuedTime ns = 614192745742034
+  raw submitTime ns = 614192745749453
+  raw startTime ns  = 614192746870957
+  raw endTime ns    = 614193124812257
+  queued-submit delay  = 0.007419 ms
+  submit-start delay   = 1.1215 ms
+  start-end runtime    = 377.941 ms
+  queue-end total time = 379.07 ms
+
+--> Event id=0x16d4320: 1 <--
+  raw queuedTime ns = 614192745734182
+  raw submitTime ns = 614192745742029
+  raw startTime ns  = 614192746020963
+  raw endTime ns    = 614193601124713
+  queued-submit delay  = 0.007847 ms
+  submit-start delay   = 0.278934 ms
+  start-end runtime    = 855.104 ms
+  queue-end total time = 855.391 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x16fd390: 0 <--
+  raw queuedTime ns = 614193614974015
+  raw submitTime ns = 614193614986425
+  raw startTime ns  = 614193615953745
+  raw endTime ns    = 614193985731245
+  queued-submit delay  = 0.01241 ms
+  submit-start delay   = 0.96732 ms
+  start-end runtime    = 369.777 ms
+  queue-end total time = 370.757 ms
+
+--> Event id=0x16e0200: 1 <--
+  raw queuedTime ns = 614193614965795
+  raw submitTime ns = 614193614974329
+  raw startTime ns  = 614193614983795
+  raw endTime ns    = 614194549570533
+  queued-submit delay  = 0.008534 ms
+  submit-start delay   = 0.009466 ms
+  start-end runtime    = 934.587 ms
+  queue-end total time = 934.605 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x1bcace0: 0 <--
+  raw queuedTime ns = 614194563500891
+  raw submitTime ns = 614194563508436
+  raw startTime ns  = 614194564457325
+  raw endTime ns    = 614194930855305
+  queued-submit delay  = 0.007545 ms
+  submit-start delay   = 0.948889 ms
+  start-end runtime    = 366.398 ms
+  queue-end total time = 367.354 ms
+
+--> Event id=0x16f3230: 1 <--
+  raw queuedTime ns = 614194563492441
+  raw submitTime ns = 614194563501537
+  raw startTime ns  = 614194563626256
+  raw endTime ns    = 614195494320796
+  queued-submit delay  = 0.009096 ms
+  submit-start delay   = 0.124719 ms
+  start-end runtime    = 930.695 ms
+  queue-end total time = 930.828 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x1691d50: 0 <--
+  raw queuedTime ns = 614195508240779
+  raw submitTime ns = 614195508248611
+  raw startTime ns  = 614195509233676
+  raw endTime ns    = 614195890538036
+  queued-submit delay  = 0.007832 ms
+  submit-start delay   = 0.985065 ms
+  start-end runtime    = 381.304 ms
+  queue-end total time = 382.297 ms
+
+--> Event id=0x16e38a0: 1 <--
+  raw queuedTime ns = 614195508232544
+  raw submitTime ns = 614195508241032
+  raw startTime ns  = 614195508368760
+  raw endTime ns    = 614196433704660
+  queued-submit delay  = 0.008488 ms
+  submit-start delay   = 0.127728 ms
+  start-end runtime    = 925.336 ms
+  queue-end total time = 925.472 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x16efad0: 0 <--
+  raw queuedTime ns = 614196447663576
+  raw submitTime ns = 614196447675897
+  raw startTime ns  = 614196448673089
+  raw endTime ns    = 614196827086249
+  queued-submit delay  = 0.012321 ms
+  submit-start delay   = 0.997192 ms
+  start-end runtime    = 378.413 ms
+  queue-end total time = 379.423 ms
+
+--> Event id=0x16ee760: 1 <--
+  raw queuedTime ns = 614196447655520
+  raw submitTime ns = 614196447664365
+  raw startTime ns  = 614196447676796
+  raw endTime ns    = 614197377597694
+  queued-submit delay  = 0.008845 ms
+  submit-start delay   = 0.012431 ms
+  start-end runtime    = 929.921 ms
+  queue-end total time = 929.942 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x17205f0: 0 <--
+  raw queuedTime ns = 614197391464806
+  raw submitTime ns = 614197391476958
+  raw startTime ns  = 614197392441429
+  raw endTime ns    = 614197765078909
+  queued-submit delay  = 0.012152 ms
+  submit-start delay   = 0.964471 ms
+  start-end runtime    = 372.637 ms
+  queue-end total time = 373.614 ms
+
+--> Event id=0x172ce20: 1 <--
+  raw queuedTime ns = 614197391456544
+  raw submitTime ns = 614197391465033
+  raw startTime ns  = 614197391477225
+  raw endTime ns    = 614198320480615
+  queued-submit delay  = 0.008489 ms
+  submit-start delay   = 0.012192 ms
+  start-end runtime    = 929.003 ms
+  queue-end total time = 929.024 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x16d4e60: 0 <--
+  raw queuedTime ns = 614198334329749
+  raw submitTime ns = 614198334344403
+  raw startTime ns  = 614198335333742
+  raw endTime ns    = 614198706176342
+  queued-submit delay  = 0.014654 ms
+  submit-start delay   = 0.989339 ms
+  start-end runtime    = 370.843 ms
+  queue-end total time = 371.847 ms
+
+--> Event id=0x16ac990: 1 <--
+  raw queuedTime ns = 614198334321677
+  raw submitTime ns = 614198334330676
+  raw startTime ns  = 614198334339268
+  raw endTime ns    = 614199270658166
+  queued-submit delay  = 0.008999 ms
+  submit-start delay   = 0.008592 ms
+  start-end runtime    = 936.319 ms
+  queue-end total time = 936.336 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x1bca2f0: 0 <--
+  raw queuedTime ns = 614199284504053
+  raw submitTime ns = 614199284515187
+  raw startTime ns  = 614199285505357
+  raw endTime ns    = 614199661572217
+  queued-submit delay  = 0.011134 ms
+  submit-start delay   = 0.99017 ms
+  start-end runtime    = 376.067 ms
+  queue-end total time = 377.068 ms
+
+--> Event id=0x16f8290: 1 <--
+  raw queuedTime ns = 614199284496275
+  raw submitTime ns = 614199284504901
+  raw startTime ns  = 614199284514186
+  raw endTime ns    = 614200224682473
+  queued-submit delay  = 0.008626 ms
+  submit-start delay   = 0.009285 ms
+  start-end runtime    = 940.168 ms
+  queue-end total time = 940.186 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x165e540: 0 <--
+  raw queuedTime ns = 614200238496344
+  raw submitTime ns = 614200238504786
+  raw startTime ns  = 614200239497115
+  raw endTime ns    = 614200623656915
+  queued-submit delay  = 0.008442 ms
+  submit-start delay   = 0.992329 ms
+  start-end runtime    = 384.16 ms
+  queue-end total time = 385.161 ms
+
+--> Event id=0x1726ac0: 1 <--
+  raw queuedTime ns = 614200238489674
+  raw submitTime ns = 614200238496525
+  raw startTime ns  = 614200238506076
+  raw endTime ns    = 614201173915919
+  queued-submit delay  = 0.006851 ms
+  submit-start delay   = 0.009551 ms
+  start-end runtime    = 935.41 ms
+  queue-end total time = 935.426 ms
+
+global_workSize[0] 512 , local_work_size[1] 16, gpu_global_work_size is 64
+Launch into gpu,gpu_global_work_size is 64
+Launch into cpu,global_work_size is 448
+--> Event id=0x16e04a0: 0 <--
+  raw queuedTime ns = 614201187821938
+  raw submitTime ns = 614201187830921
+  raw startTime ns  = 614201188916502
+  raw endTime ns    = 614201558552302
+  queued-submit delay  = 0.008983 ms
+  submit-start delay   = 1.08558 ms
+  start-end runtime    = 369.636 ms
+  queue-end total time = 370.73 ms
+
+--> Event id=0x1c32bc0: 1 <--
+  raw queuedTime ns = 614201187813327
+  raw submitTime ns = 614201187821923
+  raw startTime ns  = 614201187836136
+  raw endTime ns    = 614202128088344
+  queued-submit delay  = 0.008596 ms
+  submit-start delay   = 0.014213 ms
+  start-end runtime    = 940.252 ms
+  queue-end total time = 940.275 ms
+
+DP Supported
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x1bc7320: 0 <--
+  raw queuedTime ns = 614203357148789
+  raw submitTime ns = 614203357157280
+  raw startTime ns  = 614203357962930
+  raw endTime ns    = 614203519355430
+  queued-submit delay  = 0.008491 ms
+  submit-start delay   = 0.80565 ms
+  start-end runtime    = 161.393 ms
+  queue-end total time = 162.207 ms
+
+--> Event id=0x17f6a70: 1 <--
+  raw queuedTime ns = 614203355003296
+  raw submitTime ns = 614203355012156
+  raw startTime ns  = 614203355026208
+  raw endTime ns    = 614203389454109
+  queued-submit delay  = 0.00886 ms
+  submit-start delay   = 0.014052 ms
+  start-end runtime    = 34.4279 ms
+  queue-end total time = 34.4508 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x16b72b0: 0 <--
+  raw queuedTime ns = 614203530186556
+  raw submitTime ns = 614203530194565
+  raw startTime ns  = 614203530744464
+  raw endTime ns    = 614203692767004
+  queued-submit delay  = 0.008009 ms
+  submit-start delay   = 0.549899 ms
+  start-end runtime    = 162.023 ms
+  queue-end total time = 162.58 ms
+
+--> Event id=0x16b7840: 1 <--
+  raw queuedTime ns = 614203530178894
+  raw submitTime ns = 614203530185331
+  raw startTime ns  = 614203530203607
+  raw endTime ns    = 614203576640975
+  queued-submit delay  = 0.006437 ms
+  submit-start delay   = 0.018276 ms
+  start-end runtime    = 46.4374 ms
+  queue-end total time = 46.4621 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x16923e0: 0 <--
+  raw queuedTime ns = 614203704794691
+  raw submitTime ns = 614203704811382
+  raw startTime ns  = 614203705404500
+  raw endTime ns    = 614203867772500
+  queued-submit delay  = 0.016691 ms
+  submit-start delay   = 0.593118 ms
+  start-end runtime    = 162.368 ms
+  queue-end total time = 162.978 ms
+
+--> Event id=0x16921c0: 1 <--
+  raw queuedTime ns = 614203704780188
+  raw submitTime ns = 614203704797091
+  raw startTime ns  = 614203705020243
+  raw endTime ns    = 614203751364852
+  queued-submit delay  = 0.016903 ms
+  submit-start delay   = 0.223152 ms
+  start-end runtime    = 46.3446 ms
+  queue-end total time = 46.5847 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x17232f0: 0 <--
+  raw queuedTime ns = 614203879509672
+  raw submitTime ns = 614203879525535
+  raw startTime ns  = 614203880065430
+  raw endTime ns    = 614204042625570
+  queued-submit delay  = 0.015863 ms
+  submit-start delay   = 0.539895 ms
+  start-end runtime    = 162.56 ms
+  queue-end total time = 163.116 ms
+
+--> Event id=0x17230d0: 1 <--
+  raw queuedTime ns = 614203879501745
+  raw submitTime ns = 614203879511120
+  raw startTime ns  = 614203879530421
+  raw endTime ns    = 614203921609168
+  queued-submit delay  = 0.009375 ms
+  submit-start delay   = 0.019301 ms
+  start-end runtime    = 42.0787 ms
+  queue-end total time = 42.1074 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x16e5130: 0 <--
+  raw queuedTime ns = 614204054656288
+  raw submitTime ns = 614204056041596
+  raw startTime ns  = 614204056761526
+  raw endTime ns    = 614204218971826
+  queued-submit delay  = 1.38531 ms
+  submit-start delay   = 0.71993 ms
+  start-end runtime    = 162.21 ms
+  queue-end total time = 164.316 ms
+
+--> Event id=0x16e4f10: 1 <--
+  raw queuedTime ns = 614204054640082
+  raw submitTime ns = 614204054657299
+  raw startTime ns  = 614204054682885
+  raw endTime ns    = 614204097759247
+  queued-submit delay  = 0.017217 ms
+  submit-start delay   = 0.025586 ms
+  start-end runtime    = 43.0764 ms
+  queue-end total time = 43.1192 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x1bc0630: 0 <--
+  raw queuedTime ns = 614204231057434
+  raw submitTime ns = 614204231086064
+  raw startTime ns  = 614204231696362
+  raw endTime ns    = 614204394149722
+  queued-submit delay  = 0.02863 ms
+  submit-start delay   = 0.610298 ms
+  start-end runtime    = 162.453 ms
+  queue-end total time = 163.092 ms
+
+--> Event id=0x1bc0410: 1 <--
+  raw queuedTime ns = 614204231039731
+  raw submitTime ns = 614204231058256
+  raw startTime ns  = 614204231086184
+  raw endTime ns    = 614204276934544
+  queued-submit delay  = 0.018525 ms
+  submit-start delay   = 0.027928 ms
+  start-end runtime    = 45.8484 ms
+  queue-end total time = 45.8948 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x1ba8500: 0 <--
+  raw queuedTime ns = 614204405814532
+  raw submitTime ns = 614204405827408
+  raw startTime ns  = 614204406515358
+  raw endTime ns    = 614204568961838
+  queued-submit delay  = 0.012876 ms
+  submit-start delay   = 0.68795 ms
+  start-end runtime    = 162.446 ms
+  queue-end total time = 163.147 ms
+
+--> Event id=0x1ba82e0: 1 <--
+  raw queuedTime ns = 614204405806965
+  raw submitTime ns = 614204405814896
+  raw startTime ns  = 614204405833293
+  raw endTime ns    = 614204448185039
+  queued-submit delay  = 0.007931 ms
+  submit-start delay   = 0.018397 ms
+  start-end runtime    = 42.3517 ms
+  queue-end total time = 42.3781 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x1bc6f80: 0 <--
+  raw queuedTime ns = 614204581046035
+  raw submitTime ns = 614204581063859
+  raw startTime ns  = 614204581652019
+  raw endTime ns    = 614204744380119
+  queued-submit delay  = 0.017824 ms
+  submit-start delay   = 0.58816 ms
+  start-end runtime    = 162.728 ms
+  queue-end total time = 163.334 ms
+
+--> Event id=0x1bc6d60: 1 <--
+  raw queuedTime ns = 614204581030291
+  raw submitTime ns = 614204581047381
+  raw startTime ns  = 614204581072588
+  raw endTime ns    = 614204626241428
+  queued-submit delay  = 0.01709 ms
+  submit-start delay   = 0.025207 ms
+  start-end runtime    = 45.1688 ms
+  queue-end total time = 45.2111 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x1ba6200: 0 <--
+  raw queuedTime ns = 614204756068704
+  raw submitTime ns = 614204756085459
+  raw startTime ns  = 614204756669425
+  raw endTime ns    = 614204917761865
+  queued-submit delay  = 0.016755 ms
+  submit-start delay   = 0.583966 ms
+  start-end runtime    = 161.092 ms
+  queue-end total time = 161.693 ms
+
+--> Event id=0x1ba5fe0: 1 <--
+  raw queuedTime ns = 614204756057415
+  raw submitTime ns = 614204756067817
+  raw startTime ns  = 614204756080968
+  raw endTime ns    = 614204797460707
+  queued-submit delay  = 0.010402 ms
+  submit-start delay   = 0.013151 ms
+  start-end runtime    = 41.3797 ms
+  queue-end total time = 41.4033 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x16ba180: 0 <--
+  raw queuedTime ns = 614204929908231
+  raw submitTime ns = 614204929936633
+  raw startTime ns  = 614204930658617
+  raw endTime ns    = 614205092310897
+  queued-submit delay  = 0.028402 ms
+  submit-start delay   = 0.721984 ms
+  start-end runtime    = 161.652 ms
+  queue-end total time = 162.403 ms
+
+--> Event id=0x16b9f60: 1 <--
+  raw queuedTime ns = 614204929894506
+  raw submitTime ns = 614204929911203
+  raw startTime ns  = 614204929927350
+  raw endTime ns    = 614204972896238
+  queued-submit delay  = 0.016697 ms
+  submit-start delay   = 0.016147 ms
+  start-end runtime    = 42.9689 ms
+  queue-end total time = 43.0017 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x1726720: 0 <--
+  raw queuedTime ns = 614205102807811
+  raw submitTime ns = 614205102824562
+  raw startTime ns  = 614205104488760
+  raw endTime ns    = 614205564314460
+  queued-submit delay  = 0.016751 ms
+  submit-start delay   = 1.6642 ms
+  start-end runtime    = 459.826 ms
+  queue-end total time = 461.507 ms
+
+--> Event id=0x1726500: 1 <--
+  raw queuedTime ns = 614205102799334
+  raw submitTime ns = 614205102808226
+  raw startTime ns  = 614205102822963
+  raw endTime ns    = 614205192554171
+  queued-submit delay  = 0.008892 ms
+  submit-start delay   = 0.014737 ms
+  start-end runtime    = 89.7312 ms
+  queue-end total time = 89.7548 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x16f1f80: 0 <--
+  raw queuedTime ns = 614205571583547
+  raw submitTime ns = 614205571592330
+  raw startTime ns  = 614205572834373
+  raw endTime ns    = 614206047435513
+  queued-submit delay  = 0.008783 ms
+  submit-start delay   = 1.24204 ms
+  start-end runtime    = 474.601 ms
+  queue-end total time = 475.852 ms
+
+--> Event id=0x16a99d0: 1 <--
+  raw queuedTime ns = 614205571575037
+  raw submitTime ns = 614205571584074
+  raw startTime ns  = 614205571600537
+  raw endTime ns    = 614205680117386
+  queued-submit delay  = 0.009037 ms
+  submit-start delay   = 0.016463 ms
+  start-end runtime    = 108.517 ms
+  queue-end total time = 108.542 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x1bc0100: 0 <--
+  raw queuedTime ns = 614206059397073
+  raw submitTime ns = 614206059412981
+  raw startTime ns  = 614206060809960
+  raw endTime ns    = 614206529797540
+  queued-submit delay  = 0.015908 ms
+  submit-start delay   = 1.39698 ms
+  start-end runtime    = 468.988 ms
+  queue-end total time = 470.4 ms
+
+--> Event id=0x1bbfee0: 1 <--
+  raw queuedTime ns = 614206059383142
+  raw submitTime ns = 614206059396312
+  raw startTime ns  = 614206059416884
+  raw endTime ns    = 614206166573188
+  queued-submit delay  = 0.01317 ms
+  submit-start delay   = 0.020572 ms
+  start-end runtime    = 107.156 ms
+  queue-end total time = 107.19 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x16f3630: 0 <--
+  raw queuedTime ns = 614206541918466
+  raw submitTime ns = 614206541936640
+  raw startTime ns  = 614206543201726
+  raw endTime ns    = 614207017545006
+  queued-submit delay  = 0.018174 ms
+  submit-start delay   = 1.26509 ms
+  start-end runtime    = 474.343 ms
+  queue-end total time = 475.627 ms
+
+--> Event id=0x1acac20: 1 <--
+  raw queuedTime ns = 614206541904611
+  raw submitTime ns = 614206541921260
+  raw startTime ns  = 614206541942990
+  raw endTime ns    = 614206649244149
+  queued-submit delay  = 0.016649 ms
+  submit-start delay   = 0.02173 ms
+  start-end runtime    = 107.301 ms
+  queue-end total time = 107.34 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x1728ca0: 0 <--
+  raw queuedTime ns = 614207029443513
+  raw submitTime ns = 614207029465143
+  raw startTime ns  = 614207030745541
+  raw endTime ns    = 614207501669501
+  queued-submit delay  = 0.02163 ms
+  submit-start delay   = 1.2804 ms
+  start-end runtime    = 470.924 ms
+  queue-end total time = 472.226 ms
+
+--> Event id=0x1728a80: 1 <--
+  raw queuedTime ns = 614207029429349
+  raw submitTime ns = 614207029445415
+  raw startTime ns  = 614207029457616
+  raw endTime ns    = 614207139724530
+  queued-submit delay  = 0.016066 ms
+  submit-start delay   = 0.012201 ms
+  start-end runtime    = 110.267 ms
+  queue-end total time = 110.295 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x17226e0: 0 <--
+  raw queuedTime ns = 614207513984867
+  raw submitTime ns = 614207516025131
+  raw startTime ns  = 614207517252419
+  raw endTime ns    = 614207988623599
+  queued-submit delay  = 2.04026 ms
+  submit-start delay   = 1.22729 ms
+  start-end runtime    = 471.371 ms
+  queue-end total time = 474.639 ms
+
+--> Event id=0x16de7b0: 1 <--
+  raw queuedTime ns = 614207513977206
+  raw submitTime ns = 614207513984853
+  raw startTime ns  = 614207513997044
+  raw endTime ns    = 614207620781991
+  queued-submit delay  = 0.007647 ms
+  submit-start delay   = 0.012191 ms
+  start-end runtime    = 106.785 ms
+  queue-end total time = 106.805 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x16ba420: 0 <--
+  raw queuedTime ns = 614208000546353
+  raw submitTime ns = 614208000581119
+  raw startTime ns  = 614208001870625
+  raw endTime ns    = 614208476815905
+  queued-submit delay  = 0.034766 ms
+  submit-start delay   = 1.28951 ms
+  start-end runtime    = 474.945 ms
+  queue-end total time = 476.27 ms
+
+--> Event id=0x195e970: 1 <--
+  raw queuedTime ns = 614208000530056
+  raw submitTime ns = 614208000545728
+  raw startTime ns  = 614208000570358
+  raw endTime ns    = 614208113573430
+  queued-submit delay  = 0.015672 ms
+  submit-start delay   = 0.02463 ms
+  start-end runtime    = 113.003 ms
+  queue-end total time = 113.043 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x16fe450: 0 <--
+  raw queuedTime ns = 614208488569820
+  raw submitTime ns = 614208488583047
+  raw startTime ns  = 614208489855268
+  raw endTime ns    = 614208957985308
+  queued-submit delay  = 0.013227 ms
+  submit-start delay   = 1.27222 ms
+  start-end runtime    = 468.13 ms
+  queue-end total time = 469.415 ms
+
+--> Event id=0x16fe230: 1 <--
+  raw queuedTime ns = 614208488561872
+  raw submitTime ns = 614208488570987
+  raw startTime ns  = 614208488583020
+  raw endTime ns    = 614208592808946
+  queued-submit delay  = 0.009115 ms
+  submit-start delay   = 0.012033 ms
+  start-end runtime    = 104.226 ms
+  queue-end total time = 104.247 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x1ba8070: 0 <--
+  raw queuedTime ns = 614208968155987
+  raw submitTime ns = 614208968163158
+  raw startTime ns  = 614208969376408
+  raw endTime ns    = 614209440999268
+  queued-submit delay  = 0.007171 ms
+  submit-start delay   = 1.21325 ms
+  start-end runtime    = 471.623 ms
+  queue-end total time = 472.843 ms
+
+--> Event id=0x1ba7e50: 1 <--
+  raw queuedTime ns = 614208968148333
+  raw submitTime ns = 614208968156316
+  raw startTime ns  = 614208968167179
+  raw endTime ns    = 614209073995942
+  queued-submit delay  = 0.007983 ms
+  submit-start delay   = 0.010863 ms
+  start-end runtime    = 105.829 ms
+  queue-end total time = 105.848 ms
+
+global_workSize[0] 256 , local_work_size[1] 16, gpu_global_work_size is 32
+Launch into gpu,gpu_global_work_size is 32
+Launch into cpu,global_work_size is 224
+--> Event id=0x1661190: 0 <--
+  raw queuedTime ns = 614209453101241
+  raw submitTime ns = 614209453124991
+  raw startTime ns  = 614209454406012
+  raw endTime ns    = 614209925047892
+  queued-submit delay  = 0.02375 ms
+  submit-start delay   = 1.28102 ms
+  start-end runtime    = 470.642 ms
+  queue-end total time = 471.947 ms
+
+--> Event id=0x195b180: 1 <--
+  raw queuedTime ns = 614209453086083
+  raw submitTime ns = 614209453102587
+  raw startTime ns  = 614209453118210
+  raw endTime ns    = 614209561703931
+  queued-submit delay  = 0.016504 ms
+  submit-start delay   = 0.015623 ms
+  start-end runtime    = 108.586 ms
+  queue-end total time = 108.618 ms
+
+test	atts	units	median	mean	stddev	min	max	trial0	trial1	trial2	trial3	trial4	trial5	trial6	trial7	trial8	trial9	
+DGEMM-N	1024	GFLOPS	13.1791	13.1965	0.0397754	13.1492	13.2826	13.2399	13.2094	13.1779	13.1667	13.1804	13.1696	13.1639	13.1492	13.2826	13.2255	
+DGEMM-N_PCIe	1024	GFLOPS	12.2775	12.2105	0.258518	11.4552	12.3958	11.4552	12.3958	12.2661	12.2934	12.1874	12.2664	12.2886	12.2523	12.3902	12.3091	
+DGEMM-N_Parity	1024	N	0.0734172	0.0812811	0.0251154	0.0656313	0.155796	0.155796	0.0656313	0.074338	0.0710396	0.0814733	0.0736298	0.0712285	0.0732045	0.0720234	0.0744461	
+DGEMM-T	1024	GFLOPS	4.54589	4.55152	0.0398302	4.5093	4.65337	4.65337	4.51301	4.56538	4.51524	4.54778	4.54399	4.5093	4.57493	4.54171	4.5505	
+DGEMM-T_PCIe	1024	GFLOPS	4.43528	4.44492	0.0441646	4.39842	4.56393	4.56393	4.4343	4.45196	4.40453	4.4284	4.41923	4.39842	4.46409	4.4481	4.43625	
+DGEMM-T_Parity	1024	N	0.0251705	0.0239977	0.00320227	0.0177486	0.0282318	0.0195967	0.0177486	0.0254751	0.0251336	0.0269581	0.0282318	0.0252074	0.0248288	0.0210439	0.0257531	
+SGEMM-N	2048	GFLOPS	32.5405	33.0386	1.48211	32.3236	37.4498	37.4498	32.3938	32.8364	32.7901	32.3964	32.3236	32.7589	32.6514	32.4297	32.3558	
+SGEMM-N_PCIe	2048	GFLOPS	31.7119	31.936	0.682796	31.5041	33.916	33.916	31.5761	31.9965	31.9485	31.5713	31.5041	31.8924	31.8185	31.6053	31.5314	
+SGEMM-N_Parity	2048	N	0.0261618	0.0340401	0.023387	0.025895	0.104194	0.104194	0.025895	0.0262505	0.0263423	0.0261337	0.026013	0.0271672	0.0261774	0.0260819	0.0261462	
+SGEMM-T	2048	GFLOPS	18.4194	18.5712	0.512356	18.2713	20.0844	20.0844	18.3821	18.4567	18.5635	18.4743	18.4926	18.3481	18.273	18.366	18.2713	
+SGEMM-T_PCIe	2048	GFLOPS	18.1504	18.2978	0.496836	18.0066	19.7654	19.7654	18.1151	18.1857	18.2885	18.204	18.2225	18.0825	18.0082	18.0998	18.0066	
+SGEMM-T_Parity	2048	N	0.0147812	0.0149291	0.000418168	0.0146906	0.0161426	0.0161426	0.0147408	0.0149014	0.0150365	0.014848	0.0148216	0.0146906	0.0147025	0.0147059	0.014701	
+
+Note: Any results marked with (*) had missing values.
+      This can occur on systems with a mixture of
+      device types or architectural capabilities.
